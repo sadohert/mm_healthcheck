@@ -20,12 +20,12 @@ wsClient.setEventCallback(function(event){
     console.log(event);
 });
 
-client.setUrl('https://mattermost.stuartdoherty.com');
-client.login("stu", "jQNa9y7^U!")
+client.setUrl('YOUR URL');
+client.login("<FILL IN>", "<FILL IN>")
 .then(function(me){
     console.log(`logged in as ${me.email}`);
     token = client.getToken();
-    token = 'e1aro47o5f8umchw3phmx6qenh'
+    token = 'YOUR TOKEN'
     // TODO Check if token exists, error if not
     console.log(`token: ` + token);
 })
